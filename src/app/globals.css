@@ -1,26 +1,84 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * Custom theme configuration for the portfolio.
+ * Tailwind v4 uses CSS-first config via @theme.
+ *
+ * Color palette:
+ *   --background: dark gray (#1a1a1a)
+ *   --accent:     deep red (#dc2626)
+ *   --accent-secondary: vermilion (#ea580c)
+ *   --foreground: off-white (#e4e4e7)
+ *   --muted:      dimmed text (#a1a1aa)
+ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Fonts */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Core palette */
+  --color-background: #1a1a1a;
+  --color-foreground: #e4e4e7;
+  --color-muted: #a1a1aa;
+
+  /* Accent colors — dark red theme */
+  --color-accent: #dc2626;
+  --color-accent-dark: #991b1b;
+  --color-accent-secondary: #ea580c;
+
+  /* Surface colors for cards, sections, etc. */
+  --color-surface: #222228;
+  --color-surface-light: #2a2a30;
+  --color-border: #37373b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Smooth scroll with offset for fixed navbar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
+/* Base styles — dark mode is the default */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling for a sleek look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* Selection highlight using accent color */
+::selection {
+  background-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  color: var(--color-foreground);
+}
+
+/* Accessibility: visible focus ring for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Remove default outline for mouse clicks (non-keyboard) */
+:focus:not(:focus-visible) {
+  outline: none;
 }

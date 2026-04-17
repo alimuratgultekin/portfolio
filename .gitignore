@@ -36,9 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
-# claude code
+# claude code / AI config
 .claude/
 CLAUDE.md
+AGENTS.md
 
 # windows artifacts
 nul

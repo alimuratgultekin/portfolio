@@ -41,19 +41,19 @@ interface SkillCategory {
 const categories: SkillCategory[] = [
   {
     title: "Languages",
-    skills: ["Python", "C++", "JavaScript", "HTML/CSS", "SQL"],
+    skills: ["Python", "C++", "JavaScript", "HTML/CSS", "SQL", "Bash"],
   },
   {
     title: "ML / AI",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenCV"],
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "OpenCV", "YOLO", "Pandas", "NumPy", "Hugging Face"],
   },
   {
-    title: "Tools",
-    skills: ["Docker", "Git", "Wireshark", "Cisco Packet Tracer"],
+    title: "Cybersecurity",
+    skills: ["Wireshark", "Snort", "Nmap", "VirusTotal", "Quark Engine", "Burp Suite", "Metasploit", "Kali Linux", "Android Malware Analysis"],
   },
   {
-    title: "Frameworks",
-    skills: ["Django", "React", "Node.js"],
+    title: "Tools & Platforms",
+    skills: ["Linux/Ubuntu", "Docker", "Git", "AWS", "n8n", "VS Code", "Jupyter"],
   },
 ];
 

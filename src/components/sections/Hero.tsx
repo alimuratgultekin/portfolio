@@ -119,8 +119,7 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
         >
-          Cybersecurity Researcher &middot; ML Engineer &middot; Full-Stack
-          Developer
+          CS Student &middot; AI Agent Developer &middot; ML Engineer
         </motion.p>
       </div>
 

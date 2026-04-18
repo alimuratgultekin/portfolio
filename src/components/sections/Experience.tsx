@@ -23,11 +23,11 @@ interface Position {
 const positions: Position[] = [
   {
     role: "Research Assistant",
-    company: "University of Michigan",
+    company: "University of Michigan & University of Groningen",
     date: "Aug 2025 — Present",
     description:
-      "Developing machine learning models for Android malware detection, contributing to research in mobile security.",
-    tags: ["Python", "Machine Learning", "Research"],
+      "Collaborated with professors on 2 research papers focusing on cybersecurity and machine learning, including Android malware detection using VirusTotal and Quark Engine.",
+    tags: ["Python", "ML", "Cybersecurity", "Android Malware"],
   },
   {
     role: "Cybersecurity & ML Intern",
@@ -35,15 +35,15 @@ const positions: Position[] = [
     date: "Jun 2025 — Aug 2025",
     description:
       "Built and evaluated Intrusion Detection Systems using machine learning techniques on network traffic data.",
-    tags: ["Python", "ML", "Cybersecurity", "Docker"],
+    tags: ["Python", "ML", "Cybersecurity", "Docker", "Linux", "Snort", "Ubuntu"],
   },
   {
-    role: "Deep Learning & CV Intern",
+    role: "Deep Learning & Computer Vision Intern",
     company: "Inovako, Spain",
     date: "Jul 2024 — Oct 2024",
     description:
-      "Worked on computer vision and deep learning projects, training and optimizing models for real-world applications.",
-    tags: ["Python", "PyTorch", "OpenCV", "Deep Learning"],
+      "Labeled industrial datasets and developed a machine learning model using computer vision to detect and classify industrial components.",
+    tags: ["Python", "PyTorch", "OpenCV", "Deep Learning", "Computer Vision"],
   },
   {
     role: "Assistant Project Manager",
@@ -52,14 +52,6 @@ const positions: Position[] = [
     description:
       "Coordinated project workflows, managed documentation, and facilitated team communication across multiple initiatives.",
     tags: ["Project Management", "Communication"],
-  },
-  {
-    role: "Observer Intern",
-    company: "Technical University of Munich",
-    date: "Jan 2024 — Feb 2024",
-    description:
-      "Observed cutting-edge research in advanced computing and networking, gaining exposure to academic research workflows.",
-    tags: ["Research", "Networking"],
   },
 ];
 

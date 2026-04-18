@@ -54,8 +54,8 @@ function CountUp({ target, suffix = "" }: { target: number; suffix?: string }) {
 
 const stats = [
   { target: 3, suffix: "+", label: "Internships" },
-  { target: 1, suffix: "", label: "Publication" },
-  { target: 5, suffix: "+", label: "Projects" },
+  { target: 2, suffix: "", label: "Publications" },
+  { target: 10, suffix: "+", label: "Projects" },
   { target: 3, suffix: "", label: "Languages" },
 ];
 
@@ -89,36 +89,32 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-muted leading-relaxed">
-              I&apos;m a Computer Science student at Sabanc&iacute; University,
-              graduating in May 2026. My work sits at the intersection of{" "}
-              <span className="text-foreground font-medium">
-                cybersecurity
-              </span>
-              ,{" "}
+              I&apos;m a Computer Science student at Sabanc&iacute; University
+              with hands-on experience in{" "}
               <span className="text-foreground font-medium">
                 machine learning
               </span>
+              ,{" "}
+              <span className="text-foreground font-medium">
+                cybersecurity
+              </span>
               , and{" "}
               <span className="text-foreground font-medium">
-                computer vision
+                AI solutions
               </span>
-              &mdash;building systems that are both intelligent and secure.
+              . I offer services including custom AI agent development, website
+              building, chatbot creation, and data analysis solutions for
+              businesses.
             </p>
             <p className="text-muted leading-relaxed">
-              I&apos;ve had the opportunity to work as a research assistant at
-              the University of Michigan and intern at institutions across
-              Europe, including the University of Groningen and Inovako in
-              Spain. I&apos;m also a co-author on a paper currently under
-              revision at the{" "}
-              <span className="text-foreground font-medium italic">
-                Computers &amp; Security
-              </span>{" "}
-              journal.
-            </p>
-            <p className="text-muted leading-relaxed">
-              I speak English, Turkish, and conversational Spanish&mdash;and
-              I&apos;m always looking for new challenges that push the
-              boundaries of what software can do.
+              I&apos;ve collaborated with researchers from the University of
+              Michigan and University of Groningen on cybersecurity and machine
+              learning projects, resulting in{" "}
+              <span className="text-foreground font-medium">
+                2 academic publications
+              </span>
+              . My work spans from intrusion detection systems to Android
+              malware analysis.
             </p>
 
             {/* Stats row — staggered reveal with count-up */}

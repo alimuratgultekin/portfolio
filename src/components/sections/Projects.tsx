@@ -28,38 +28,45 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Android Malware Detection",
+    description:
+      "ML system using VirusTotal and Quark Engine combined with metadata to detect malicious Android applications.",
+    tags: ["Python", "ML", "Cybersecurity", "VirusTotal", "Quark Engine"],
+    github: "#",
+  },
+  {
     title: "Intrusion Detection System",
     description:
-      "ML-based network intrusion detection system with Docker deployment, trained on real-world traffic datasets.",
-    tags: ["Python", "Machine Learning", "Docker", "Networking"],
+      "Machine learning pipeline using Random Forest and XGBoost to detect network intrusions.",
+    tags: ["Python", "Scikit-learn", "Docker", "Cybersecurity"],
+    github: "#",
+  },
+  {
+    title: "Industrial Simulation Game",
+    description:
+      "Real-life simulation game for teaching supply chain and industrial engineering concepts.",
+    tags: ["React", "JavaScript", "Game Development", "Education"],
+    github: "#",
+  },
+  {
+    title: "OpenSMILE Emotion Detection",
+    description:
+      "ML model trained to detect emotional states from voice recordings.",
+    tags: ["Python", "ML", "Audio Processing", "OpenSMILE"],
+    github: "#",
+  },
+  {
+    title: "Medical Data Security Analysis",
+    description:
+      "Security analysis on NHANES dataset focusing on diabetes and heart attack prediction data.",
+    tags: ["Python", "Data Analysis", "Healthcare", "Security"],
     github: "#",
   },
   {
     title: "Lung Cancer Detection",
     description:
-      "Deep learning model for medical image classification, detecting lung cancer from CT scan imagery.",
-    tags: ["Python", "TensorFlow", "Computer Vision", "Deep Learning"],
-    github: "#",
-  },
-  {
-    title: "Secure P2P Client",
-    description:
-      "End-to-end encrypted peer-to-peer messaging application with RSA, AES, and ECC cryptographic protocols.",
-    tags: ["Python", "Cryptography", "Socket Programming", "Tkinter"],
-    github: "#",
-  },
-  {
-    title: "Crime & Socioeconomic Analysis",
-    description:
-      "Machine learning analysis of crime patterns correlated with socioeconomic factors across multiple datasets.",
-    tags: ["Python", "Scikit-learn", "Pandas", "Data Analysis"],
-    github: "#",
-  },
-  {
-    title: "Shopping Website",
-    description:
-      "Full-stack e-commerce platform with user authentication, product management, and order processing.",
-    tags: ["PHP", "MySQL", "HTML/CSS", "XAMPP"],
+      "Computer vision module detecting lung cancer nodules from CT scans using deep learning.",
+    tags: ["Python", "PyTorch", "Computer Vision", "Medical AI"],
     github: "#",
   },
 ];

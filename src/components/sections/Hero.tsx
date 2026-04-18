@@ -82,8 +82,8 @@ export default function Hero() {
         </div>
       )}
 
-      {/* Simple Mode Toggle — z-20 */}
-      <div className="absolute top-6 right-6 z-20 pointer-events-auto">
+      {/* Simple Mode Toggle — above canvas, below navbar on mobile */}
+      <div className="absolute top-20 right-4 z-40 pointer-events-auto md:top-6 md:right-6">
         <SimpleModeToggle />
       </div>
 
@@ -91,7 +91,7 @@ export default function Hero() {
       <div className="pointer-events-none relative z-10 flex h-full flex-col items-center justify-center px-4">
         {/* Name with staggered letter reveal */}
         <motion.h1
-          className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+          className="text-[clamp(1.75rem,7.5vw,3rem)] font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

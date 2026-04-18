@@ -69,6 +69,27 @@ const projects: Project[] = [
     tags: ["Python", "PyTorch", "Computer Vision", "Medical AI"],
     github: "#",
   },
+  {
+    title: "Secure P2P Client Application",
+    description:
+      "Secure peer-to-peer messaging app with RSA enrollment, AES-CBC encryption, and ECC/HMAC handshake for session-key derivation and mutual authentication.",
+    tags: ["Python", "Cryptography", "RSA", "AES", "ECC", "Tkinter"],
+    github: "#",
+  },
+  {
+    title: "Crime & Socioeconomic Analysis",
+    description:
+      "ML analysis of education and unemployment impact on crime rates using Random Forest, Logistic Regression, and KNN.",
+    tags: ["Python", "Scikit-learn", "Data Analysis", "EDA"],
+    github: "#",
+  },
+  {
+    title: "Shopping Website",
+    description:
+      "Full-stack e-commerce website with responsive UI and MySQL backend.",
+    tags: ["PHP", "MySQL", "XAMPP", "HTML/CSS"],
+    github: "#",
+  },
 ];
 
 export default function Projects() {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useMemo, useEffect } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { useMouse } from "@/hooks/useMouse";
 
@@ -83,6 +83,8 @@ export default function Shield() {
   const hoverVal = useRef(0);
 
   const mouse = useMouse();
+  const { size } = useThree();
+  const mobileScale = size.width < 768 ? 0.65 : 1;
 
   // Disable raycasting on rings so they don't block hover on the sphere
   useEffect(() => {
@@ -255,7 +257,7 @@ export default function Shield() {
   });
 
   return (
-    <group ref={groupRef}>
+    <group ref={groupRef} scale={mobileScale}>
       {/* Particle sphere */}
       <points geometry={geometry}>
         <shaderMaterial

@@ -59,6 +59,19 @@ const taglineVariants = {
   },
 };
 
+const ctaVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: "easeOut" as const,
+      delay: 2.0,
+    },
+  },
+};
+
 const scrollIndicatorVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -121,6 +134,27 @@ export default function Hero() {
         >
           CS Student &middot; AI Agent Developer &middot; ML Engineer
         </motion.p>
+
+        {/* CTA Buttons */}
+        <motion.div
+          className="mt-8 flex gap-4 pointer-events-auto"
+          variants={ctaVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <a
+            href="#projects"
+            className="rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5"
+          >
+            View My Work
+          </a>
+          <a
+            href="#contact"
+            className="rounded-lg border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-200 hover:border-white/20 hover:bg-white/10 hover:-translate-y-0.5"
+          >
+            Get In Touch
+          </a>
+        </motion.div>
       </div>
 
       {/* Scroll indicator — z-10 */}

@@ -143,10 +143,11 @@ export default function Hero() {
           animate="visible"
         >
           <a
-            href="#projects"
+            href="/AliMuratGultekin_CV.pdf"
+            download
             className="rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all duration-200 hover:brightness-110 hover:-translate-y-0.5"
           >
-            View My Work
+            Download Resume
           </a>
           <a
             href="#contact"

@@ -117,7 +117,7 @@ export default function Contact() {
         >
           {/* GitHub */}
           <a
-            href="#"
+            href="https://github.com/alimuratgultekin"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted transition-all duration-200 hover:text-accent hover:scale-110"
@@ -130,7 +130,7 @@ export default function Contact() {
 
           {/* LinkedIn */}
           <a
-            href="#"
+            href="https://www.linkedin.com/in/alimuratgultekin/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted transition-all duration-200 hover:text-accent hover:scale-110"

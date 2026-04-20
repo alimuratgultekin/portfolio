@@ -112,7 +112,7 @@ export default function Contact() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="mt-12 flex items-center justify-center gap-6"
         >
           {/* GitHub */}
